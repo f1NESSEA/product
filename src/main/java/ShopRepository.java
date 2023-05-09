@@ -52,6 +52,7 @@ public class ShopRepository {
         }
         products = tmp;
     }
+
     public void add(Product product) {
         if (findById(product.id) == product) {
             throw new AlreadyExistsException(
